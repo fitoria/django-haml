@@ -1,0 +1,10 @@
+Django-haml
+
+Django Management Command to convert hamlpy templates to Django Templates
+
+Requirements:
+    -Hamlpy (http://github.com/jessemiller/HamlPy)
+
+TODO:
+    -Testing
+    -Setup.py
