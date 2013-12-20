@@ -12,4 +12,4 @@ Installation an use:
     4. ./manage.py compilehaml
 
 TODO:
-    -Testing
+    -More test cases

@@ -3,8 +3,7 @@ from django.core.management.base import BaseCommand, CommandError
 import os
 import sys
 
-def compile_haml():
-    basedirs = []
+def compile_haml(basedirs=[]):
     if os.environ.get('DJANGO_SETTINGS_MODULE'):
         from django.conf import settings
         basedirs.extend(settings.TEMPLATE_DIRS)
@@ -12,7 +11,7 @@ def compile_haml():
     basedirs = set(map(os.path.abspath, filter(os.path.isdir, basedirs)))
 
     if not basedirs:
-        raise CommandError("This script should be run on your Django projecto or app tree")
+        raise CommandError("This script should be run on your Django project or app tree")
 
     for basedir in basedirs:
         for dirpath, dirnames, filenames in os.walk(basedir):

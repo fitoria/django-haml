@@ -1,0 +1,5 @@
+<ul id='athletes'>
+    {% for athlete in athlete_list %}
+        <li id='athlete_{{ athlete.pk }}' class='athlete'>{{ athlete.name }}</li>
+    {% endfor %}
+</ul>
