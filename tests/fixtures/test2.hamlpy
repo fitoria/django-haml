@@ -1,0 +1,3 @@
+%ul#athletes
+    - for athlete in athlete_list
+        %li.athlete{'id': 'athlete_{{ athlete.pk }}'}= athlete.name

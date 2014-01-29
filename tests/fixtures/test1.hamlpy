@@ -1,0 +1,6 @@
+#profile
+    .left.column
+        #date 2010/02/18
+        #address Toronto, ON
+    .right.column
+        #bio Jesse Miller

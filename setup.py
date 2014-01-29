@@ -32,5 +32,6 @@ setup(
         'Licence :: OSI Approved :: MIT Licence',
         'Programming Languaje :: Python',
         'Topic :: Internet :: WWW/HTTP',
-    ]
+    ],
+    test_suite = "tests",
 )
